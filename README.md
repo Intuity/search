@@ -46,3 +46,8 @@ class Search {
 
 };
 ```
+
+## Credits
+
+Favicon - Search by INDRAWATI from ![https://thenounproject.com/browse/icons/term/search](Noun Project)</a>
+Background - Memphis Colorful by ![https://raulgaitan.com](Raul Gaitan)
