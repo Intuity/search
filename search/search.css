@@ -1,0 +1,178 @@
+div.search-bar {
+    background-color:white;
+    position:fixed;
+    top:0;
+    width:100vw;
+    min-height:100vh;
+    transition: min-height 0.15s ease, border-bottom 0.15s ease;
+    border-bottom:1px solid rgba(230, 230, 230, 0);
+    box-sizing:border-box;
+    z-index:1000;
+    background-image:url(memphis-colorful.png);
+}
+
+div.search-bar.compact {
+    min-height:100px;
+    border-bottom:1px solid rgba(230, 230, 230, 1.0);
+}
+
+div.search-bar .search-bar-inner {
+    position:absolute;
+    top:50%;
+    left:50px;
+    right:50px;
+    margin-top:-30px;
+}
+
+div.search-bar .search-bar-inner label {
+    font-size:30px;
+    line-height:35px;
+    text-align:center;
+}
+
+div.search-spin {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:900;
+    opacity:0;
+    background-color:white;
+    transition: opacity 0.15s ease, visibility 0s;
+    visibility:hidden;
+}
+
+div.search-spin.visible {
+    opacity:1;
+    visibility:visible;
+}
+
+div.search-spin .spinner-border {
+    position:absolute;
+    top:50%;
+    margin-top:-30px;
+}
+
+div.search-result {
+    margin-top:100px;
+}
+
+div.search-result .search-summary {
+    height:30px;
+    text-align:center;
+    line-height:35px;
+    font-size:12px;
+    color:#AAA;
+}
+
+div.search-result .search-entry {
+    width:100%;
+    margin:5px;
+    padding:10px;
+    box-sizing:border-box;
+    border:1px solid #EEE;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+div.search-result .search-entry:hover,
+div.search-result .search-entry.focus {
+    border-color:#FEB139 !important;
+    box-shadow:0 0 5px #FEB139 !important;
+}
+
+div.search-result .search-entry h4,
+div.search-result .search-entry p.lead {
+    margin-bottom:0;
+}
+
+div.search-result .search-entry p.lead em {
+    color:#D61C4E;
+    font-weight:bold;
+    font-style:normal;
+}
+
+div.search-result .search-pages {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+div.search-help {
+    width:100%;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    color:#AAA;
+    font-size:10px;
+    margin-top:10px;
+    border-top:1px solid #EEE;
+}
+
+div.search-sources {
+    width:100%;
+}
+
+div.search-sources .search-source {
+    position:relative;
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #CCC;
+    border-radius:3px;
+    margin:5px;
+    padding:5px;
+    cursor:pointer;
+}
+
+div.search-result .search-source.focus {
+    border-color:#C689C6 !important;
+}
+
+div.search-result .search-source:hover {
+    border-color:#C689C6 !important;
+    box-shadow:0 0 5px #C689C6 !important;
+}
+
+div.search-sources .search-source .search-source-name {
+    float:left;
+    height:30px;
+    line-height:30px;
+}
+
+div.search-sources .search-source .badge {
+    float:right;
+    width:30px;
+    height:30px;
+    line-height:23px;
+}
+
+div.search-sources .search-source .search-clear {
+    width:100%;
+    clear:both;
+}
+
+/* Dark Mode */
+
+body.dark {
+    background-color:#111;
+    color:white;
+}
+
+body.dark div.search-bar {
+    background-image:url(memphis-dark.png);
+    color:#AAA;
+    border-bottom:1px solid rgba(50, 50, 50, 0);
+}
+
+body.dark div.search-bar.compact {
+    border-bottom:1px solid rgba(50, 50, 50, 1);
+}
+
+body.dark div.search-spin {
+    background-color:#111;
+}
+
+body.dark div.search-result .search-entry,
+body.dark div.search-result .search-source {
+    border-color:#333;
+}
