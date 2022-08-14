@@ -49,5 +49,5 @@ class Search {
 
 ## Credits
 
-Favicon - Search by INDRAWATI from [Noun Project](https://thenounproject.com/browse/icons/term/search)</a>
-Background - Memphis Colorful by [Raul Gaitan](https://raulgaitan.com)
+ * Favicon - Search by INDRAWATI from [Noun Project](https://thenounproject.com/browse/icons/term/search)</a>
+ * Background - Memphis Colorful by [Raul Gaitan](https://raulgaitan.com)
